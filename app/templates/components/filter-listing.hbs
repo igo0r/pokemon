@@ -1,0 +1,6 @@
+<div class="row">
+  {{#power-select options=model.types onchange=(action "autoComplete") as |type|}}
+    {{type}}
+  {{/power-select}}
+</div>
+{{yield}}

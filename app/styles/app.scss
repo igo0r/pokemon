@@ -1,3 +1,5 @@
+@import 'ember-power-select/themes/bootstrap';
+@import "ember-power-select";
 
 @media (max-width: 767px) {
   .affix {
@@ -26,12 +28,14 @@
   margin: 0px 20px 20px 0px;
   padding: 5px;
   text-align: center;
+  min-height: 210px;
 }
 
 .pokemon-block img {
   width: 100%;
   height: 100%;
 }
+
 .pokemon-block .row {
   margin: 0px;
   padding: 0px;
@@ -39,11 +43,14 @@
 }
 
 .pokemon-type-text {
-  margin: 0px;
+  display:table-cell;
+  vertical-align:middle;
+  font-weight: 500;
 }
 
 .pokemon-view {
   margin-left: 20px;
+  min-width: 200px;
 }
 
 .pokemon-item {
@@ -51,16 +58,39 @@
 }
 
 .load-more {
+  color: white;
   padding-right: 20px;
 }
 
 .type {
   border-radius: 5px;
-  padding-left: 0px;
   font-size: 9px;
-  vertical-align: middle;
   margin: 2px;
   padding: 0px;
   min-width: 43px;
   min-height: 25px;
+  display: table;
 }
+
+.filter-block {
+  margin: 20px;
+  border: 0px;
+}
+
+.autocomplete-block {
+  padding-top: 5px;
+}
+
+.option-block {
+  padding: 0px 5px;
+  margin: 2px 0px;
+}
+
+.btn-primary {
+  background-image: none;
+  background-color: #008CFF;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+}
+

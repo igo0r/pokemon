@@ -1,0 +1,15 @@
+<div class="pokemon-item col-lg-4 col-md-4 col-sm-6" {{action "showDetail" pokemon}}>
+    <div class="pokemon-block">
+        <img src="http://pokeapi.co/media/img/{{pokemon.id}}.png ">
+        <br/>
+        <strong>{{pokemon.name}}</strong>
+        <div class="row">
+          {{#each pokemon.types as |type|}}
+              <div class="col-xs-5 type" style="background-color: HSL({{format-type type.resource_uri}}, 75%, 75%)">
+                  <span class="pokemon-type-text">{{type.name}}</span>
+              </div>
+          {{/each}}
+        </div>
+    </div>
+</div>
+{{yield}}

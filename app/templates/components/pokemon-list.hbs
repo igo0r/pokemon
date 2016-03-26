@@ -1,0 +1,16 @@
+<div class="row col-md-8 col-sm-8">
+  {{#each filteredPokemons.pokemons as |pokemon|}}
+    {{pokemon-preview title="Pokemon" pokemon=pokemon onShowDetail=(action 'showPokemon')}}
+  {{/each}}
+    <div class="load-more">
+        <button {{action "loadMore"}} type="button" class="btn btn-lg btn-primary btn-block">Load more</button>
+    </div>
+</div>
+
+<div class="row col-md-4 col-sm-4">
+  {{#if pokemonView}}
+    {{pokemon-view model=pokemonView}}
+  {{/if}}
+</div>
+
+{{yield}}
