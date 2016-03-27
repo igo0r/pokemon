@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'kottans',
+    modulePrefix: 'pokemon',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
