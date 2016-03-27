@@ -1,9 +1,49 @@
 <div class="pokemon-block pokemon-view affix">
-    <img src="http://pokeapi.co/media/img/{{model.id}}.png ">
-    <h3>{{model.name}}</h3>
-    <p>abilities: {{model.abilities}}</p>
-    <p>Type: {{model.type}}</p>
-    <p>attack: {{model.attack}}</p>
-    <p>defense: {{model.defense}}</p>
+    <img src="http://pokeapi.co/media/img/{{model.id}}.png">
+    <h4 class="view-title">{{model.name}} #{{model.national_id}}</h4>
+    <table class="view-table">
+        <tbody class="view-body">
+        <tr>
+            <td class="row-description">Types</td>
+            <td>
+              {{#each model.types as |type|}}
+                {{type.name}}
+              {{/each}}
+            </td>
+        </tr>
+        <tr>
+            <td class="row-description">Attack</td>
+            <td>{{model.attack}}</td>
+        </tr>
+        <tr>
+            <td class="row-description">Defense</td>
+            <td>{{model.defense}}</td>
+        </tr>
+        <tr>
+            <td class="row-description">HP</td>
+            <td>{{model.hp}}</td>
+        </tr>
+        <tr>
+            <td class="row-description">SP Attack</td>
+            <td>{{model.sp_atk}}</td>
+        </tr>
+        <tr>
+            <td class="row-description">SP Defense</td>
+            <td>{{model.sp_def}}</td>
+        </tr>
+        <tr>
+            <td class="row-description">Speed</td>
+            <td>{{model.speed}}</td>
+        </tr>
+        <tr>
+            <td class="row-description">Weight</td>
+            <td>{{model.weight}}</td>
+        </tr>
+        <tr>
+            <td class="row-description">Total moves</td>
+            <td>{{model.total}}</td>
+        </tr>
+        </tbody>
+    </table>
 </div>
 {{yield}}

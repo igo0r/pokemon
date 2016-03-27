@@ -43,14 +43,36 @@
 }
 
 .pokemon-type-text {
-  display:table-cell;
-  vertical-align:middle;
+  display: table-cell;
+  vertical-align: middle;
   font-weight: 500;
 }
 
 .pokemon-view {
   margin-left: 20px;
-  min-width: 200px;
+  width: 230px;
+}
+
+.view-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.view-table, td{
+  border: 1px solid black;
+}
+.view-table td{
+  height: 25px;
+}
+.view-table .row-description{
+  width: 40%;
+}
+
+.view-title{
+  font-weight: 600;
+}
+
+.pokemon-view h3 {
+  margin-top: 10px;
 }
 
 .pokemon-item {

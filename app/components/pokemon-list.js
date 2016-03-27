@@ -8,11 +8,14 @@ export default Ember.Component.extend({
     },
     loadMore() {
       var self = this;
-      this.model.pokemons.content.store.findAll('pokemon').then(function (result) {
+      this.model.pokemons.content.store.query('pokemon', {
+        limit: 12,
+        offset: this.model.pokemons.content.meta.offset + this.model.pokemons.content.meta.limit
+      }).then(function (result) {
+        self.get('model.pokemons.content').set('meta', result.meta);
         self.get('model.pokemons.content').pushObjects(result.content);
       });
       self.set('filteredPokemons', Ember.copy(self.get('model')));
-      //this.model.filteredPokemons.set('content', this.model.pokemons.content);
     }
   }
 });
