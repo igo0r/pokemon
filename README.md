@@ -1,5 +1,8 @@
 # Kottans
 
+JS Framework: [Ember.js v.2.4.0](http://emberjs.com)
+CSS Framework: Bootstrap v3.3.6
+
 [Compiled gh-pages version](http://igo0r.github.io/pokemon/)
 
 This README outlines the details of collaborating on this Ember application.
