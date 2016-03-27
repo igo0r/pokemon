@@ -1,4 +1,4 @@
-import { formatType } from 'kottans/helpers/format-type';
+import { formatType } from 'pokemon/helpers/format-type';
 import { module, test } from 'qunit';
 
 module('Unit | Helper | format type');
