@@ -1,7 +1,7 @@
 # Kottans
 
 JS Framework: [Ember.js v.2.4.0](http://emberjs.com)
-CSS Framework: Bootstrap v3.3.6
+CSS Framework: [Bootstrap v3.3.6](http://getbootstrap.com/)
 
 [Compiled gh-pages version](http://igo0r.github.io/pokemon/)
 
