@@ -1,14 +1,134 @@
 @import 'ember-power-select/themes/bootstrap';
 @import "ember-power-select";
 
+@media (max-width: 767px) and (min-width: 450px) {
+  .container {
+    width: 75%;
+    max-width: 390px;
+  }
+}
+
+@media (max-width: 449px) {
+  .container {
+    width: 90%;
+    min-width: 320px;
+  }
+}
+
 @media (max-width: 767px) {
   .affix {
     position: relative;
   }
+  .pokemon-block {
+    border: 1px solid black;
+    margin-bottom: 30px;
+    padding: 5px;
+    text-align: center;
+    min-height: 330px;
+  }
+
+  .preview-photo {
+    width: 218px;
+    height: 218px;
+    margin: 0 auto;
+  }
+
+  .pokemon-view {
+    margin: 0px;
+    width: 100%;
+    background-color: white;
+  }
+
 }
 
-.container {
-  width: 700px;
+@media (min-width: 992px) {
+
+  .container {
+    width: 700px;
+  }
+  .preview-photo {
+    width: 107px;
+    height: 107px;
+  }
+
+  .pokemon-block {
+    border: 1px solid black;
+    margin: 0px 20px 20px 0px;
+    padding: 5px;
+    text-align: center;
+    min-height: 210px;
+  }
+
+  .type {
+    border-radius: 5px;
+    font-size: 11px;
+    margin: 2px;
+    padding: 0px;
+    min-width: 43px;
+    height: 25px;
+    display: table;
+    text-transform: capitalize;
+  }
+}
+
+@media (min-width: 768px) {
+  .pokemon-view {
+    margin-left: 20px;
+    width: 230px;
+    background-color: white;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .pokemon-block {
+    border: 1px solid black;
+    margin: 0px 20px 20px 0px;
+    padding: 5px;
+    text-align: center;
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .type {
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 5px;
+    padding: 0px;
+    min-width: 43px;
+    height: 25px;
+    display: table;
+    text-transform: capitalize;
+  }
+  .pokemon-block strong {
+    font-size: 16px;
+  }
+}
+
+.el-mask {
+  display: block;
+  width: 14400px;
+  height: 5440px;
+  z-index: 9000;
+  background-color: #2a2a38;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.loading-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 9003;
+}
+
+.view-photo {
+  width: 218px;
+  height: 218px;
+  margin: 0 auto;
 }
 
 .pokedex {
@@ -21,14 +141,6 @@
 
 .pokedex-title {
   margin: 12px;
-}
-
-.pokemon-block {
-  border: 1px solid black;
-  margin: 0px 20px 20px 0px;
-  padding: 5px;
-  text-align: center;
-  min-height: 210px;
 }
 
 .pokemon-block img {
@@ -52,14 +164,10 @@
   font-weight: 500;
 }
 
-.pokemon-view {
-  margin-left: 20px;
-  width: 230px;
-}
-
 .view-table {
   border-collapse: collapse;
   width: 100%;
+  margin-bottom: 12px;
   text-transform: capitalize;
 }
 
@@ -90,17 +198,7 @@
 .load-more {
   color: white;
   padding-right: 20px;
-}
-
-.type {
-  border-radius: 5px;
-  font-size: 11px;
-  margin: 2px;
-  padding: 0px;
-  min-width: 43px;
-  height: 25px;
-  display: table;
-  text-transform: capitalize;
+  margin-bottom: 20px;
 }
 
 .filter-block {
@@ -124,6 +222,7 @@
   font-weight: bold;
   border-radius: 10px;
 }
+
 .ember-power-select-clear-btn {
   right: 25px;
   top: 0px;

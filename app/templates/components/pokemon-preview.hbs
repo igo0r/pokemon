@@ -1,6 +1,8 @@
 <div class="pokemon-item col-lg-4 col-md-4 col-sm-6" {{action "showDetail" pokemon}}>
     <div class="pokemon-block">
-        <img src="http://pokeapi.co/media/img/{{pokemon.id}}.png ">
+        <div class="preview-photo">
+            <img src="http://pokeapi.co/media/img/{{pokemon.id}}.png ">
+        </div>
         <br/>
         <strong>{{pokemon.name}}</strong>
         <div class="row">
