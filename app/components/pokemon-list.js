@@ -8,6 +8,7 @@ export default Ember.Component.extend({
     },
     loadMore() {
       var self = this;
+      self.set("disableLoadMore", true);
       this.model.pokemons.content.store.query('pokemon', {
         limit: 12,
         offset: this.model.pokemons.content.meta.offset + this.model.pokemons.content.meta.limit

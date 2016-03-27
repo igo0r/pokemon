@@ -14,5 +14,6 @@ export default Ember.Route.extend({
     // Implement your custom setup after
     let filteredPokemons = Ember.copy(model);
     controller.set('filteredPokemons', filteredPokemons);
+    controller.set("disableLoadMore", true);
   }
 });

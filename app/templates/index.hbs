@@ -1,10 +1,10 @@
 <div class="row filter-block">
     <div class="col-xs-offset-1 col-xs-2"><h4>Type:</h4></div>
     <div class="col-xs-6 autocomplete-block">
-      {{#power-select selected=selectedType options=model.types onchange=(action "autoComplete") as |type|}}
+      {{#power-select selected=selectedType options=model.types allowClear=true searchField="name" onchange=(action "autoComplete") as |type|}}
           <div class="option-block"
                style="background-color: HSL({{format-type type.resource_uri}}, 75%, 75%)">{{type.name}}</div>
       {{/power-select}}
     </div>
 </div>
-{{pokemon-list filteredPokemons=filteredPokemons model=model}}
+{{pokemon-list filteredPokemons=filteredPokemons model=model disableLoadMore=disableLoadMore}}

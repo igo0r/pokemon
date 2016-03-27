@@ -36,6 +36,10 @@
   height: 100%;
 }
 
+.pokemon-item .pokemon-block {
+  cursor: pointer;
+}
+
 .pokemon-block .row {
   margin: 0px;
   padding: 0px;
@@ -56,18 +60,22 @@
 .view-table {
   border-collapse: collapse;
   width: 100%;
+  text-transform: capitalize;
 }
-.view-table, td{
+
+.view-table, td {
   border: 1px solid black;
 }
-.view-table td{
+
+.view-table td {
   height: 25px;
 }
-.view-table .row-description{
+
+.view-table .row-description {
   width: 40%;
 }
 
-.view-title{
+.view-title {
   font-weight: 600;
 }
 
@@ -86,12 +94,13 @@
 
 .type {
   border-radius: 5px;
-  font-size: 9px;
+  font-size: 11px;
   margin: 2px;
   padding: 0px;
   min-width: 43px;
-  min-height: 25px;
+  height: 25px;
   display: table;
+  text-transform: capitalize;
 }
 
 .filter-block {
@@ -115,4 +124,8 @@
   font-weight: bold;
   border-radius: 10px;
 }
-
+.ember-power-select-clear-btn {
+  right: 25px;
+  top: 0px;
+  font-weight: 900;
+}
