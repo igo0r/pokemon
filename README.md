@@ -22,8 +22,9 @@ You will need the following things properly installed on your computer.
 * `npm install`
 * `bower install`
 
-## Running / Development
+## Running
 
+Navigate to the app directory and run:
 * `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+* Visit app at [http://localhost:4200](http://localhost:4200).
 
